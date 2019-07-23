@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +23,8 @@ Route::get('stats', function () {
         'series' => 200,
         'lessons' => 1300
     ];
+});
+
+Route::get('achievements', function () {
+    return User::find(1)->achievements()->get();
 });
