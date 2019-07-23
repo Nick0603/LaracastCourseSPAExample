@@ -3,7 +3,7 @@
     <h1 class="font-normal  text-3xl text-grey-darkest leading-none ">Loaders And Animations</h1>
     <p class="my-10 test-grey-darker leading-normal">
       This spinner uses AirBnb's
-      <a href="http://airbnb.io/lottie/#/web" class="text-blue font-bold"></a>
+      <a href="http://airbnb.io/lottie/#/web" target="_blank" class="text-standard-blue font-bold">Lottie</a>
       library to render its animation. You may download the necessary assets below.
     </p>
     <div class="border border-grey-lighter rounded-lg flex items-center justify-center mb-8">

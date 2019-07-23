@@ -6,8 +6,8 @@ import Mascot from './components/Mascot';
 import TheTeam from './components/TheTeam';
 import Typography from './components/Typography';
 import Wallpapers from './components/Wallpapers';
-import LoadersAndAnimations from './components/LoadersAndAnimations';
 import NotFoud from './components/NotFound';
+let LoadersAndAnimations = () => import(/* webpackChunkName: "loaders" */'./components/LoadersAndAnimations');
 
 export default {
     mode: 'history',
