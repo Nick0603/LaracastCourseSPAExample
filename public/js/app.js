@@ -1965,20 +1965,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      achievements: []
+      achievements: [],
+      token: ""
     };
   },
-  created: function created() {
-    var _this = this;
+  methods: {
+    fetchAchievements: function fetchAchievements() {
+      var _this = this;
 
-    axios.get("http://laravel.test:8000/api/achievements").then(function (response) {
-      return response.data;
-    }).then(function (data) {
-      _this.achievements = data;
-    });
+      axios.get("http://laravel.test:8000/api/achievements?api_token=".concat(this.token))["catch"](function (error) {
+        _this.message = error.response.data.message;
+        _this.achievements = [];
+      }).then(function (_ref) {
+        var data = _ref.data;
+        _this.message = null;
+        _this.achievements = data;
+      });
+    }
   }
 });
 
@@ -2812,9 +2823,49 @@ var render = function() {
   return _c("div", [
     _c(
       "h1",
-      { staticClass: "font-normal text-3xl text-grey-darkest leading-none" },
+      {
+        staticClass: "font-normal mb-6 text-3xl text-grey-darkest leading-none"
+      },
       [_vm._v("Your Achievements")]
     ),
+    _vm._v(" "),
+    _c("input", {
+      directives: [
+        {
+          name: "model",
+          rawName: "v-model",
+          value: _vm.token,
+          expression: "token"
+        }
+      ],
+      staticClass: "border p-2 rounded w-full",
+      attrs: { placeholder: "Your Laracasts API Token", type: "text" },
+      domProps: { value: _vm.token },
+      on: {
+        keyup: function($event) {
+          if (
+            !$event.type.indexOf("key") &&
+            _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
+          ) {
+            return null
+          }
+          return _vm.fetchAchievements($event)
+        },
+        input: function($event) {
+          if ($event.target.composing) {
+            return
+          }
+          _vm.token = $event.target.value
+        }
+      }
+    }),
+    _vm._v(" "),
+    _vm.message
+      ? _c("p", {
+          staticClass: "text-red-500 italic text-sm",
+          domProps: { textContent: _vm._s(_vm.message) }
+        })
+      : _vm._e(),
     _vm._v(" "),
     _c(
       "ul",

@@ -14,9 +14,7 @@ use App\User;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+
 
 Route::get('stats', function () {
     return [
@@ -25,6 +23,12 @@ Route::get('stats', function () {
     ];
 });
 
-Route::get('achievements', function () {
-    return User::find(1)->achievements()->get();
+Route::group(['middleware' => 'auth:api'], function () {
+    Route::get('/user', function (Request $request) {
+        return $request->user();
+    });
+
+    Route::get('achievements', function () {
+        return Auth::guard('api')->user()->achievements()->get();
+    });
 });
