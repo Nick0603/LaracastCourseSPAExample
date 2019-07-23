@@ -228,6 +228,66 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -1028,13 +1088,138 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "h1",
-    { staticClass: "font-normal  text-3xl text-grey-darkest leading-none " },
-    [_vm._v("Logo Symbol")]
-  )
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "h1",
+        {
+          staticClass: "font-normal  text-3xl text-grey-darkest leading-none "
+        },
+        [_vm._v("Logo Symbol")]
+      ),
+      _vm._v(" "),
+      _c("div", [
+        _c(
+          "picture",
+          {
+            staticClass:
+              "block rounded-lg shadow flex justify-center items-center my-6",
+            staticStyle: { height: "382px" }
+          },
+          [
+            _c("img", {
+              attrs: {
+                alt: "symbol-original.svg",
+                src: "/images/symbol-original.svg"
+              }
+            })
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "flex justify-between items-center" }, [
+        _c("p", [
+          _vm._v("\n      Original symbol on\n      "),
+          _c("strong", [_vm._v("white")]),
+          _vm._v("background\n    ")
+        ]),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass:
+              "border border-grey-light px-6 px-2 rounded-full text-sm text-black font-bold",
+            attrs: { target: "_blank", href: "/images/symbol-original.svg" }
+          },
+          [_vm._v("logo.svg")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", [
+        _c(
+          "picture",
+          {
+            staticClass:
+              "block rounded-lg shadow flex justify-center items-center my-6 bg-standard-blue",
+            staticStyle: { height: "382px" }
+          },
+          [
+            _c("img", {
+              attrs: {
+                alt: "symbol-negative.svg",
+                src: "/images/symbol-negative.svg"
+              }
+            })
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "flex justify-between items-center" }, [
+        _c("p", [
+          _vm._v("\n      Negative symbol with accent on\n      "),
+          _c("strong", [_vm._v("dark")]),
+          _vm._v("background\n    ")
+        ]),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass:
+              "border border-grey-light px-6 px-2 rounded-full text-sm text-black font-bold",
+            attrs: { target: "_blank", href: "/images/symbol-negative.svg" }
+          },
+          [_vm._v("negative-logo.svg")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", [
+        _c(
+          "picture",
+          {
+            staticClass:
+              "block rounded-lg shadow flex justify-center items-center my-6 bg-black",
+            staticStyle: { height: "382px" }
+          },
+          [
+            _c("img", {
+              attrs: {
+                alt: "symbol-pure-negative.svg",
+                src: "/images/symbol-pure-negative.svg"
+              }
+            })
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "flex justify-between items-center" }, [
+        _c("p", [
+          _vm._v("\n      Pure negative symbol on\n      "),
+          _c("strong", [_vm._v("dark")]),
+          _vm._v("background\n    ")
+        ]),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass:
+              "border border-grey-light px-6 px-2 rounded-full text-sm text-black font-bold",
+            attrs: {
+              target: "_blank",
+              href: "/images/symbol-pure-negative.svg"
+            }
+          },
+          [_vm._v("symbol-pure-negative.svg")]
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
