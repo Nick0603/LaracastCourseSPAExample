@@ -7,6 +7,7 @@ import TheTeam from './components/TheTeam';
 import Typography from './components/Typography';
 import Wallpapers from './components/Wallpapers';
 import NotFoud from './components/NotFound';
+import SiteStats from './components/SiteStats';
 let LoadersAndAnimations = () => import(/* webpackChunkName: "loaders" */'./components/LoadersAndAnimations');
 
 export default {
@@ -52,6 +53,10 @@ export default {
         {
             path: '/colors',
             component: Colors
+        },
+        {
+            path: '/site-stats',
+            component: SiteStats
         }
     ]
 }
