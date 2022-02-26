@@ -3743,11 +3743,6 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
 
-laravel-mix-tailwind@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/laravel-mix-tailwind/-/laravel-mix-tailwind-0.1.0.tgz#5dee3cb7a85aef6354912982a31ba387997e3289"
-  integrity sha512-thy+4VSAHeB6sCmozO+Oley3bu7q5pRarxyXVI3EPI+rKRRSbzZI5JlI++R/oQilVhi4xu+iJlMSFb31Rgwr8w==
-
 laravel-mix@^4.0.7:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/laravel-mix/-/laravel-mix-4.1.2.tgz#eaf9999f030d2d45614a83457e0ee3b6f243b56d"
@@ -4004,6 +3999,11 @@ loose-envify@^1.0.0:
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
+
+lottie-web@^5.5.7:
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.8.1.tgz#807e0af0ad22b59bf867d964eb684cb3368da0ef"
+  integrity sha512-9gIizWADlaHC2GCt+D+yNpk5l2clZQFqnVWWIVdY0LnxC/uLa39dYltAe3fcmC/hrZ2IUQ8dLlY0O934Npjs7Q==
 
 lower-case@^1.1.1:
   version "1.1.4"
@@ -5289,8 +5289,9 @@ querystring@0.2.0:
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
 
 querystringify@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
+  integrity sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
@@ -5529,6 +5530,7 @@ require-main-filename@^2.0.0:
 requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
+  integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
 resolve-cwd@^2.0.0:
   version "2.0.0"
@@ -6464,8 +6466,9 @@ urix@^0.1.0:
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
 
 url-parse@^1.4.3:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.10.tgz#9d3c2f736c1d75dd3bd2be507dcc111f1e2ea9c1"
+  integrity sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
